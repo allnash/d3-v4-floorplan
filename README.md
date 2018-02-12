@@ -3,13 +3,11 @@
 A map-like interactive set of [reusable charts](http://bost.ocks.org/mike/chart/) 
 for layering visualizations on a common local coordinate system like floor plans.
 
-Here's an image of a example in action:
+Here's an image of an example in action:
 
 ![In Action](images/sample.png)
 
-Move along.
-
-Requires [D3](V4.13.0).
+Requires [D3 V4+](V4.13.0).
 
 ## How to compile
 
