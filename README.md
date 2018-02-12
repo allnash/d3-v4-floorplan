@@ -1,14 +1,15 @@
-# Floor Plan
+# Floor Plan V4(Work in progress)
 
-A map-like interactive set of [reusable charts](http://bost.ocks.org/mike/chart/) for layering visualizations on a common local coordinate system like floor plans.
+A map-like interactive set of [reusable charts](http://bost.ocks.org/mike/chart/) 
+for layering visualizations on a common local coordinate system like floor plans.
 
-# Resources
+Here's an image of a example in action:
 
- * [Demo Page](http://dciarletta.github.com/d3-floorplan/) 
- * [API Reference](http://github.com/dciarletta/d3-floorplan/wiki/API-Reference)
- * [Data Formats](http://github.com/dciarletta/d3-floorplan/wiki/Data-Formats)
+![In Action](images/sample.png)
 
-Requires [D3](http://mbostock.github.com/d3/).
+Move along.
+
+Requires [D3](V4.13.0).
 
 ## How to compile
 
