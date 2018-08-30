@@ -127,7 +127,6 @@ map.zonePolygons(svg, mapdata.floors[0].zones);
 
 // Load and Draw sensors
 mapdata.floors[0].sensors.forEach(function(sensor){
-    console.log(sensor);
     new map.sensorImageLayer(svg, mapdata.floors[0], sensor);
 });
 
