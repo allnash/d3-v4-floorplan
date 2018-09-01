@@ -125,6 +125,11 @@ map.imageLayers(svg, mapdata.floors);
 // Load default polygons.
 map.zonePolygons(svg, mapdata.floors[0].zones);
 
+// Load and Draw sensors
+mapdata.floors[0].sensors.forEach(function(sensor){
+    new map.sensorImageLayer(svg, mapdata.floors[0], sensor);
+});
+
 // Draw Zone function
 var drawZone = d3.select('#poly').on('click', function () {
     var zonePolyPoints = [];
@@ -159,7 +164,12 @@ $('#mapdata').html(library.json.prettyPrint(mapdata));
 // Helper to automatically refresh data
 var updateMapData = d3.select('#updateMapData').on('click', function () {
     // Reacalculate all coordinate points.
-
+    mapdata.floors[0].sensors.forEach(function(sensor) {
+       var cssAttribute = $("g.sensor-"+sensor.id).css('transform');
+       var matrix = cssAttribute.replace(/[^0-9\-.,]/g, '').split(',');
+       sensor.x += parseInt(matrix[4]);
+       sensor.y += parseInt(matrix[5]);
+    });
     $('#mapdata').html(library.json.prettyPrint(mapdata));
 });
 
