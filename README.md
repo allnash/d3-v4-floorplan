@@ -1,4 +1,4 @@
-# Floor Plan V4(Work in progress)
+# Floor Plan V4
 
 A map-like interactive set of [reusable charts](http://bost.ocks.org/mike/chart/) 
 for layering visualizations on a common local coordinate system like floor plans.
